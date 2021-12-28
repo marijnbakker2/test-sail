@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    return 'hello world';
+    $u = User::inRandomOrder()->first();
+    return 'Hi '.$u->name;
 });
