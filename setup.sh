@@ -19,3 +19,6 @@ cp .env.example .env
 
 # Run database seeds
 ./vendor/bin/sail artisan db:seed
+
+# Stop sail
+./vendor/bin/sail down
