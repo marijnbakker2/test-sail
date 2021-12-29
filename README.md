@@ -4,17 +4,10 @@ test for laravel sail
 To Install the project;
 1. Clone the repo
 2. CD into the project folder
-3. Run following command:
+3. To initialize the project, run following command:
 ```
-  docker run --rm \
-    -u "$(id -u):$(id -g)" \
-    -v $(pwd):/var/www/html \
-    -w /var/www/html \
-    laravelsail/php81-composer:latest \
-    composer install --ignore-platform-reqs
+sh setup.sh
 ```
-4. Run "cp .env.example .env"
-5. Run "./vendor/bin/sail artisan key:generate"
 
 To run the project inside a docker container:
 
