@@ -11,7 +11,12 @@ sh setup.sh
 
 To run the project inside a docker container:
 
-"./vendor/bin/sail up -d" (-d here is to run the project in the background)
+```
+# -d here is to run the project in the background)
+./vendor/bin/sail up -d 
+```
 
 To close the running docker containers;
-"/vendor/bin/sail sail down"
+```
+/vendor/bin/sail sail down
+```
