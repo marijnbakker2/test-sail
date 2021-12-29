@@ -17,7 +17,8 @@ cp .env.example .env
 # Set application key
 ./vendor/bin/sail artisan key:generate
 
-# Run database seeds
+# Run database migrations and seed the database
+./vendor/bin/sail artisan migrate
 ./vendor/bin/sail artisan db:seed
 
 # Stop sail
