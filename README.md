@@ -18,5 +18,5 @@ To run the project inside a docker container:
 
 To close the running docker containers;
 ```
-/vendor/bin/sail sail down
+./vendor/bin/sail sail down
 ```
